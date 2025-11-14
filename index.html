@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            justify-items: center;
+            background-color: rgba(14, 102, 216, 0.537);
+        }
+        .tabela{
+            display: flex;
+            line-height: 1.5em;
+        }
+        .mae{
+            background-color: aliceblue;
+            padding: 1em 3em;
+            border-radius: 1em;
+            margin-top: 2em;
+            border: solid 1px;
+        }
+        li{
+            list-style: none;
+        }
+        p{
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: .3em 0;
+            margin: .1em 0;
+        }
+
+        button{
+            width: 100%;
+            padding: .8em 0;
+            margin: .8em 0;
+            background-color: rgba(14, 102, 216, 0.537);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="mae">
+        <h2>tabela de  IMC</h2>
+        <div class="tabela">
+
+            <ul class="lista1">
+                <p>IMC</p>
+                <li>menos do que 18,5</li>
+                <li>entre 18,5 e 24,9</li>
+                <li>entre 25 e 29,9</li>
+                <li>entre 30 e 34,9</li>
+                <li>entre 35 e 39,9</li>
+                <li>mais de 40</li>
+            </ul>
+
+            <ul class="lista2">
+                <p>RESULTADO</p>
+                <li>abaixo do peso</li>
+                <li>peso normal</li>
+                <li>sobrepeso</li>
+                <li>obesidade grau 1 </li>
+                <li>obesidade grau 2</li>
+                <li>obesidade grau 3</li>
+            </ul>
+        </div>
+
+        <h2>calcule seu imc</h2>
+
+        <form action="/" id="formulario" method="post">
+
+        <label for="peso">peso:</label><br>
+        <input type="text" id="peso" name="peso"><br>
+
+        <label for="altura">altura:</label><br>
+        <input type="texte" id="altura" name="altura"><br>
+
+        <button type="submit">calcular</button>
+    </form>
+         <div id="resultado"></div>
+    </div>       
+   
+
+    <script src="javascript.js"></script>
+</body>
+</html>
